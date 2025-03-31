@@ -1,0 +1,14 @@
+[package]
+name = "ground-motion-lib"
+version = "0.1.0"
+edition = "2024"
+license = "Apache-2.0"
+authors = ["Andrey Stepnov <a.stepnov@geophystech.ru>"]
+description = "A performant, modular Rust library for computing and analyzing ground motion predictions using GMPE models."
+repository = "https://github.com/geophystech/GroundMotion.rs/ground-motion-lib"
+
+[dependencies]
+csv = "1.3.1"
+geo = "0.30.0"
+serde = "1.0.219"
+rayon = "1.10.0"
