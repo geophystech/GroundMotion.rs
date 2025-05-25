@@ -1,0 +1,12 @@
+[package]
+name = "ground-motion-bin"
+version = "0.1.0"
+edition = "2024"
+license = "Apache-2.0"
+authors = ["Andrey Stepnov <a.stepnov@geophystech.ru>"]
+description = ""
+repository = "https://github.com/geophystech/GroundMotion.rs/ground-motion-bin"
+
+[dependencies]
+ground-motion-lib = { path = "../ground-motion-lib" }
+clap = { version = "4.5", features = ["derive"] }
