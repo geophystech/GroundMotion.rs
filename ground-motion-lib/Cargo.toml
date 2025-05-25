@@ -5,7 +5,7 @@ edition = "2024"
 license = "Apache-2.0"
 authors = ["Andrey Stepnov <a.stepnov@geophystech.ru>"]
 description = "A performant, modular Rust library for computing and analyzing ground motion predictions using GMPE models."
-repository = "https://github.com/geophystech/GroundMotion.rs/ground-motion-lib"
+repository = "https://github.com/geophystech/GroundMotion.rs"
 readme = "README.md"
 
 [dependencies]
