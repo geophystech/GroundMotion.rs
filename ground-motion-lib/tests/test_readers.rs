@@ -18,7 +18,7 @@ fn test_read_usgs_vs_30_grid_wo_dl() -> Result<(), Box<dyn Error>> {
         lon += point.lon;
         lat += point.lat;
         vs30 += point.vs30;
-        assert!(point.dl == None);
+        assert!(point.dl.is_none());
     }
     assert!(approx_equal(lon, 2395.229157, EPSILON));
     assert!(approx_equal(lat, 910.704195, EPSILON));
