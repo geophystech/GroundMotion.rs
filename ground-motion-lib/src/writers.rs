@@ -16,9 +16,9 @@
 //! ## Example Output Format (tab-delimited)
 //!
 //! ```text
-//! lon	lat	value	kind
-//! 142.600	50.100	0.789	Pga
-//! 142.700	50.200	0.923	Pga
+//! lon    lat    value    kind
+//! 142.600    50.100    0.789    Pga
+//! 142.700    50.200    0.923    Pga
 //! ```
 //!
 //! ## See Also

@@ -40,8 +40,7 @@ fn main() -> Result<(), Box<dyn Error>> {
         let vs30_grid = read_vs30_points(vs_30_file, delim)?;
 
         let conf = configs.get(config_name.as_str());
-        let running_config;
-        match conf {
+        let running_config = match conf {
             None => {
                 return Err(
                     "Config not found by name, use `--list-configs` to see avaliable keys.".into(),
@@ -49,9 +48,10 @@ fn main() -> Result<(), Box<dyn Error>> {
             }
             Some(cfg) => {
                 println!("Use config {cfg:#?}");
-                running_config = cfg;
+                cfg
             }
-        }
+        };
+
         let eq = Earthquake::new_mw(eq[0], eq[1], eq[2], eq[3]);
         println!("Use Earthquake with parameters {eq:#?}");
 

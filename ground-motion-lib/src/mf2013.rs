@@ -108,7 +108,7 @@ impl GroundMotionModeling for MF2013 {
     /// # Arguments
     ///
     /// * `point` - The site location and properties (longitude, latitude, Vs30, depth to 1400 m/s
-    /// layer, etc.).
+    ///   layer, etc.).
     /// * `eq` - The earthquake event (magnitude, depth, hypocenter location).
     ///
     /// # Returns

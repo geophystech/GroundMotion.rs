@@ -129,7 +129,7 @@ impl Vs30Point {
     ///
     /// A `GmpePoint` with the computed value.
     pub fn get_gm<T: GroundMotionModeling>(&self, gmpe: &T, eq: &Earthquake) -> GmpePoint {
-        gmpe.calc_from_point(&self, eq)
+        gmpe.calc_from_point(self, eq)
     }
 }
 
