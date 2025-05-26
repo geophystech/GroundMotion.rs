@@ -34,7 +34,7 @@ const EQ85: Earthquake = Earthquake {
 const GRID_EPICENTER: Vs30Point = Vs30Point {
     lon: 143.04,
     lat: 51.92,
-    vs30: 350,
+    vs30: 350.,
     dl: None,
     xvf: None,
 };

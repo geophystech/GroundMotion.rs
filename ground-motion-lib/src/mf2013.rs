@@ -118,10 +118,10 @@ impl GroundMotionModeling for MF2013 {
         let epicentral_distance = Haversine
             .distance(Point::new(eq.lon, eq.lat), Point::new(point.lon, point.lat))
             / 1000.;
-        let vs_30 = point.vs30 as f64;
+        let vs_30 = point.vs30;
         let dl = match point.dl {
             None => DL as f64,
-            Some(dl) => dl as f64,
+            Some(dl) => dl,
         };
         let xvf = match point.xvf {
             None => 0.,

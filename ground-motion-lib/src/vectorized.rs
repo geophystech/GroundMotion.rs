@@ -32,8 +32,8 @@
 //! use ground_motion_lib::vectorized::{calc_gmpe_vec, compute_stats};
 //!
 //! let points = vec![
-//!     Vs30Point::new(142.5, 50.0, 400, Some(200), Some(0)),
-//!     Vs30Point::new(142.6, 50.1, 350, Some(150), Some(1)),
+//!     Vs30Point::new(142.5, 50.0, 400., Some(200.), Some(0)),
+//!     Vs30Point::new(142.6, 50.1, 350., Some(150.), Some(1)),
 //! ];
 //!
 //! let eq = Earthquake {
@@ -99,8 +99,8 @@ use rayon::prelude::*;
 /// use ground_motion_lib::vectorized::calc_gmpe_vec;
 ///
 /// let points = vec![
-///     Vs30Point::new(142.5, 50.0, 400, Some(200), Some(0)),
-///     Vs30Point::new(142.6, 50.1, 350, Some(150), Some(1)),
+///     Vs30Point::new(142.5, 50.0, 400., Some(200.), Some(0)),
+///     Vs30Point::new(142.6, 50.1, 350., Some(150.), Some(1)),
 /// ];
 ///
 /// let eq = Earthquake {

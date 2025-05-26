@@ -14,10 +14,10 @@ pub struct Vs30Point {
     /// Latitude in decimal degrees. Example: `50.35927`
     pub lat: f64,
     /// Average shear-wave velocity (Vs, in m/s) in the top 30 meters of soil.
-    pub vs30: u64,
+    pub vs30: f64,
     /// Depth (in meters) to the subsurface layer where Vs reaches 1400 m/s at the site.
     #[serde(default)]
-    pub dl: Option<u64>,
+    pub dl: Option<f64>,
     /// Binary variable (0 or 1) indicating the site's position relative to the volcanic front
     /// (specific to Japan).
     #[serde(default)]
@@ -105,10 +105,10 @@ impl Vs30Point {
     ///
     /// ```
     /// use ground_motion_lib::gmm::Vs30Point;
-    /// let vs30_point = Vs30Point::new(142.523, 52.913, 300, Some(250), Some(1));
+    /// let vs30_point = Vs30Point::new(142.523, 52.913, 300., Some(250.), Some(1));
     /// println!("Point is {vs30_point:?}");
     /// ```
-    pub fn new(lon: f64, lat: f64, vs30: u64, dl: Option<u64>, xvf: Option<u8>) -> Self {
+    pub fn new(lon: f64, lat: f64, vs30: f64, dl: Option<f64>, xvf: Option<u8>) -> Self {
         Self {
             lon,
             lat,

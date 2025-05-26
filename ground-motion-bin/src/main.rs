@@ -11,7 +11,6 @@ use std::error::Error;
 
 fn main() -> Result<(), Box<dyn Error>> {
     let cmd_args = CmdArgs::parse();
-    println!("{cmd_args:?}");
 
     let configs = get_mf2013_lib_configs();
 
@@ -64,8 +63,6 @@ fn main() -> Result<(), Box<dyn Error>> {
         println!("Write gmpe points to {out_file}...");
         write_gmpe_points(out_file, delim, &out_grid)?;
         println!("Done");
-
-
     };
 
     Ok(())
