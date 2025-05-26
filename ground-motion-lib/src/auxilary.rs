@@ -73,19 +73,19 @@ mod tests {
 
     #[test]
     fn test_approx_equal_exact() {
-        assert!(approx_equal(3.14, 3.14, 0.00001));
+        assert!(approx_equal(5.14, 5.14, 0.00001));
     }
 
     #[test]
     fn test_approx_equal_with_small_epsilon() {
-        assert!(!approx_equal(3.14, 3.1400001, 1e-12));
-        assert!(approx_equal(3.14, 3.14, 1e-12));
+        assert!(!approx_equal(5.14, 5.1400001, 1e-12));
+        assert!(approx_equal(5.14, 5.14, 1e-12));
     }
 
     #[test]
     fn test_round_to_places() {
-        assert_eq!(round_to_places(3.14159, 2), 3.14);
-        assert_eq!(round_to_places(3.145, 2), 3.15);
+        assert_eq!(round_to_places(5.14159, 2), 5.14);
+        assert_eq!(round_to_places(5.145, 2), 5.15);
         assert_eq!(round_to_places(-3.145, 2), -3.15);
         assert_eq!(round_to_places(3.0, 2), 3.0);
     }
@@ -98,6 +98,6 @@ mod tests {
 
     #[test]
     fn test_round_to_more_places() {
-        assert_eq!(round_to_places(3.14159, 4), 3.1416);
+        assert_eq!(round_to_places(5.14159, 4), 5.1416);
     }
 }
