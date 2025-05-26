@@ -17,6 +17,7 @@ designed for both research and operational hazard modeling workflows.
 * [ground-motion-lib](#ground-motion-lib)
 * [ground-motion-bin](#ground-motion-bin)
 * [Full example](#full-example)
+  * [Precompiled Release](#precompiled-release)
   * [Compile the Binary](#compile-the-binary)
   * [Get VS30 Input Data](#get-vs30-input-data)
   * [Run a Test Prediction — Neftegorsk Earthquake (1995)](#run-a-test-prediction--neftegorsk-earthquake-1995)
@@ -119,6 +120,14 @@ Options:
 ```
 
 ## Full example
+
+### Precompiled Release
+
+You can download a precompiled binary for your platform from the
+[Releases](https://github.com/geophystech/GroundMotion.rs/releases) page.
+
+If you prefer, you can also compile the binary from source — see the
+instructions in the next section.
 
 ### Compile the Binary
 
