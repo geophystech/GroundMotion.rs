@@ -39,10 +39,14 @@ jobs:
       - name: Build binary
         run: cargo build --release --target ${{ matrix.target }}
 
+      - name: Prepare release artifacts
+        run: |
+          mkdir -p release
+          cp target/${{ matrix.target }}/release/ground-motion-bin${{ matrix.ext }} release/ground-motion-bin-${{ matrix.target }}${{ matrix.ext }}
+
       - name: Upload binary to release
         uses: softprops/action-gh-release@v2
         with:
-          name: ground-motion-bin-${{ matrix.target }}
-          files: target/${{ matrix.target }}/release/ground-motion-bin${{ matrix.ext }}
+          files: release/ground-motion-bin-${{ matrix.target }}${{ matrix.ext }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
