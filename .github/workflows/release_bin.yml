@@ -42,7 +42,7 @@ jobs:
       - name: Upload binary to release
         uses: softprops/action-gh-release@v2
         with:
+          name: ground-motion-bin-${{ matrix.target }}
           files: target/${{ matrix.target }}/release/ground-motion-bin${{ matrix.ext }}
-
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
