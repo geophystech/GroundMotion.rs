@@ -126,6 +126,12 @@ Options:
 You can download a precompiled binary for your platform from the
 [Releases](https://github.com/geophystech/GroundMotion.rs/releases) page.
 
+| Platform              | Binary                                             |
+|:---------------------|:---------------------------------------------------|
+| Linux (x86_64, musl)  | `ground-motion-bin-x86_64-unknown-linux-musl`      |
+| macOS (x86_64)        | `ground-motion-bin-x86_64-apple-darwin`            |
+| Windows (x86_64)      | `ground-motion-bin-x86_64-pc-windows-msvc.exe`     |
+
 If you prefer, you can also compile the binary from source — see the
 instructions in the next section.
 
